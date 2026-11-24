@@ -1,8 +1,8 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { K as require_react, b as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as Menu, c as House, d as BadgeCheck, f as ArrowUpRight, i as Scale, l as ClipboardCheck, n as UserRound, o as LifeBuoy, s as Layers, t as X, u as Building2 } from "../_libs/lucide-react.mjs";
-import { i as previewPathPrefix, n as INTAKE_NOTICE, r as leadSchema } from "./router-xPnRZicP.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-wlObF8pj.js
+import { i as previewPathPrefix, n as INTAKE_NOTICE, r as leadSchema } from "./router-B5qud9vu.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DiaGHE5G.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var nav = [
@@ -740,6 +740,7 @@ function RequestForm() {
 									placeholder: "Что нужно сделать и в каком объёме",
 									"aria-invalid": Boolean(errors.task),
 									"aria-describedby": errors.task ? "task-error" : void 0,
+									suppressHydrationWarning: true,
 									className: "mt-2 w-full resize-y rounded-xl bg-mist px-4 py-3 text-base text-ink outline-none ring-1 ring-transparent transition focus:bg-paper focus:ring-green-text"
 								}),
 								errors.task ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
@@ -755,7 +756,8 @@ function RequestForm() {
 									name: "consent",
 									className: "mt-0.5 size-5 shrink-0 accent-green-text",
 									"aria-invalid": Boolean(errors.consent),
-									"aria-describedby": errors.consent ? "consent-error" : "consent-note"
+									"aria-describedby": errors.consent ? "consent-error" : "consent-note",
+									suppressHydrationWarning: true
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 									id: "consent-note",
 									children: [
@@ -828,6 +830,7 @@ function Field({ name, label, error, placeholder, autoComplete, inputMode }) {
 			placeholder,
 			"aria-invalid": Boolean(error),
 			"aria-describedby": error ? errorId : void 0,
+			suppressHydrationWarning: true,
 			className: "mt-2 h-12 w-full rounded-xl bg-mist px-4 text-base text-ink outline-none ring-1 ring-transparent transition focus:bg-paper focus:ring-green-text"
 		}),
 		error ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
