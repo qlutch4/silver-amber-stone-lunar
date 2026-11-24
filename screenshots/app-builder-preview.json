@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "ЛАДОМ — одна компания для разных задач",
+      "hasCanvas": false,
+      "bodyTextLen": 4559,
+      "bodyTextHash": "108c7f7d402306f1954f3a1c4d7e3dced9adfd6871ac381ad48b3d20c79fff0c",
+      "bodyTextPrefix": "К содержанию ЛАДОМ Главная Услуги Для бизнеса О компании Контакт",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "ЛАДОМ — одна компания для разных задач",
+      "hasCanvas": false,
+      "bodyTextLen": 4509,
+      "bodyTextHash": "f4ee1347ebe42e337e8155ecc0905bbffabe922a1a74344d3ebbda6e3244780f",
+      "bodyTextPrefix": "К содержанию ЛАДОМ Открыть меню Сервисная компания Одна компания",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

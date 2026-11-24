@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --color-paper: #ffffff;
+  --color-mist: #f5f6f7;
+  --color-ink: #333333;
+  --color-graphite: #212529;
+  --color-muted: #5c656d;
+  --color-line: #e4e7ea;
+  --color-green: #27ae60;
+  --color-green-deep: #219653;
+  /* Same hue, darkened so small text and icons clear WCAG on white. */
+  --color-green-text: #146c3a;
+  --shadow-card:
+    0px 0px 0px 1px rgba(33, 37, 41, 0.06),
+    0px 1px 2px -1px rgba(33, 37, 41, 0.05),
+    0px 18px 40px -24px rgba(33, 37, 41, 0.18);
+  --shadow-card-hover:
+    0px 0px 0px 1px rgba(33, 37, 41, 0.08),
+    0px 1px 2px -1px rgba(33, 37, 41, 0.06),
+    0px 22px 44px -22px rgba(33, 37, 41, 0.22);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-green-text);
+    outline-offset: 3px;
+  }
+}
